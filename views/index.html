@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Timestamp Microservice</title>
+        <link rel="stylesheet" href="public/styles.css">
+    </head>
+    <body>
+        <h1>Timestamp microservice</h1>
+        <div class="cont">
+            <p>Type in the url '/api/timestamp/' then either enter the unix value (number of milliseconds since the beggining of 1970)
+                or enter a Gregorian calendar value in the format of 'YYYY-MM-DD' with the dashes, a JSON timestamp will be returned in UTC/GMT time.</p>
+            <p>For example if you enter 'api/timestamp/2015-12-25' you'll get {"unix":1451001600000,"utc":"Fri Dec 25 2015 00:00:00 GMT+0000 (Greenwich Mean Time)"}<br>
+            or<br>
+            'api/timestamp/1610586552699' will get {"unix":1610586552699,"utc":"Thu, 14 Jan 2021 01:09:12 GMT"}</p>
+            <p>If your route parameter is passed then a timestamp of the currect UTC/GMT time will be returned. Any inccorect inputs will return an error.</p>
+        </div>
+    </body>
+</html>
